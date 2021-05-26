@@ -21,7 +21,7 @@ def midSort(arr,start=0,end=-1,steps=0):
     while i<end:
         val=arr[i]
         
-        if val<mid:
+        if val<=mid:
             temp[a]=val
             a+=1
         else:
@@ -32,9 +32,9 @@ def midSort(arr,start=0,end=-1,steps=0):
         
     arr[start:end]=temp
     
-    if a>1 and mid>minv+1:
+    if a>0 and mid>minv+1:
         steps=midSort(arr,start,a+start,steps)
-    if b>2 and mid<maxv-1:
+    if b>1 and mid<maxv-1:
         steps=midSort(arr,a+start,end,steps)
         
     return steps
@@ -72,7 +72,7 @@ def quickSort(arr, low, high):
 def benchmark():
     times=[]
     
-    for i in range(15):
+    for i in range(20):
         times.append(2**(i+1))
     
     for n in times:
@@ -88,6 +88,8 @@ def benchmark():
         start = time.time()
         quickSort(b,0,n-1)
         print('|',n,'|quick|',time.time()-start,'|')
+        
+        
     
     
         
