@@ -1,7 +1,7 @@
 # midSort
 An efficient sorting algorithm
 
-Test Benchmark
+Test Benchmark (0-1000 random ints)
 
 | No. of elements | Mode | Seconds |
 | --------------- | ---- | ------- |
