@@ -1,17 +1,22 @@
 # midSort
 An efficient sorting algorithm
-
+---
 For array with n elements and m range of numbers
 
 Algorithm
+
 Step 1) Find max and min from the array [2n]
+
 Step 2) Find mid value [1]
+
 Step 3) Split into two array, one array with less than mid value, another with more than mid value [n]
+
 Step 4) Repeat Step 1 to 3 for splitted array if array length is >1 [log m]
-
+---
 Overall average time complexity = n log(m)
-Best case time complexity = n (Range = 1, every element is same)
 
+Best case time complexity = n (Range = 1, every element is same)
+---
 Test Benchmark (0-1000 random ints)
 
 | No. of elements | Mode | Seconds |
